@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaoPai - Step Into Your Style</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Kanit & Prompt for Thai support) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            /* สีที่อ้างอิงจากโลโก้และแบนเนอร์ในภาพ */
+        }
+        .brand-font {
+            /* ฟอนต์สำหรับโลโก้ (เลือก Prompt ให้ดูเด่น) */
+            font-family: 'Prompt', sans-serif;
+        }
+        .bg-gaopai-red {
+            /* สีแดงหลักของแบรนด์ */
+            background-color: #C0504D;
+        }
+        .text-gaopai-red {
+            color: #C0504D;
+        }
+        .bg-gaopai-yellow {
+            /* สีเหลืองจากป้าย Sale */
+            background-color: #EBC675;
+        }
+        .bg-gaopai-footer {
+            /* สีแดงเข้มส่วน Footer */
+            background-color: #8B3A3A;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 1. Navbar (Complete Version) -->
+    <nav class="bg-gray-100 py-4 border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-3xl font-bold text-gaopai-red brand-font tracking-wide">
+                GaoPai
+            </div>
+            
+            <!-- Menu (Desktop) -->
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium text-gray-600">
+                <a href="#" class="bg-gaopai-red text-white px-4 py-1.5 rounded-full text-xs shadow-md">Home</a>
+                <a href="#" class="hover:text-gaopai-red">Shop</a>
+                <a href="#" class="hover:text-gaopai-red">สินค้าลดราคา (SALE)</a>
+                <a href="#" class="hover:text-gaopai-red">Contact</a>
+            </div>
+
+            <!-- Icons (Complete Version) -->
+            <div class="flex items-center space-x-4 text-gray-600">
+                <div class="relative hidden sm:block">
+                    <!-- ไอคอนค้นหาจะถูกวางทับบน input field -->
+                    <input type="text" class="bg-gray-200 rounded-full pl-3 pr-8 py-1.5 text-sm w-36 focus:outline-none" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                </div>
+                <a href="#" class="hover:text-gaopai-red"><i class="fa-solid fa-user fa-lg"></i></a>
+                <a href="#" class="hover:text-gaopai-red relative">
+                    <i class="fa-solid fa-cart-shopping fa-lg text-gaopai-red"></i>
+                    <!-- ตัวเลขบนตะกร้า (Mockup) -->
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section (Restored) -->
+    <header class="bg-gray-100 pt-10 pb-0 text-center overflow-hidden">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-2 brand-font">Step Into Your Style</h1>
+        <p class="text-gaopai-red text-lg md:text-xl mb-8 font-light">คอลเลกชั่นใหม่มาถึงแล้ว!</p>
+        
+        <!-- Hero Image Mockup: Hands holding shoes (ตามภาพ) -->
+        <div class="w-full h-64 md:h-80 bg-cover bg-center shadow-inner" style="background-image: url('https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=2000&auto=format&fit=crop'); background-position: center 70%;">
+            <!--  -->
+        </div>
+    </header>
+
+    <!-- 3. Red Slogan Banner (Restored) -->
+    <div class="bg-gaopai-red text-white text-center py-3 text-sm md:text-base font-light px-4 shadow-md">
+        "ยกระดับทุกลุค" (Elevate Your Everyday Look) เป็นรุ่นที่รวบรวมสิ่งที่ดีที่สุดของเราแล้ว ทั้งดีไซน์และการสวมใส่
+    </div>
+
+    <!-- 4. Mid-Year Sale Grid (UPDATED LAYOUT) -->
+    <section class="grid grid-cols-1 md:grid-cols-2 h-auto md:h-[400px]">
+        <!-- Sale Text Block (Takes 1/2 width) -->
+        <div class="bg-gaopai-yellow flex flex-col justify-center items-start px-8 md:px-12 py-10 md:py-0 order-1">
+            <h2 class="text-4xl font-bold text-black uppercase">Mid-Year</h2>
+            <h2 class="text-4xl font-bold text-black uppercase mb-2">Sale</h2>
+            <div class="text-8xl md:text-9xl font-bold text-white drop-shadow-lg">50%</div>
+        </div>
+        
+        <!-- Sale Images (Takes 1/2 width, split into 3 columns) -->
+        <div class="grid grid-cols-3 h-80 md:h-full order-2">
+            <!-- Image 1 (Brown Shoes) -->
+            <div class="relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1528701800487-ba01fea498c0?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition transform duration-300 group-hover:scale-105" alt="Men Shoes">
+                <!--  -->
+            </div>
+            <!-- Image 2 (Red Heels) -->
+            <div class="relative overflow-hidden group">
+                 <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition transform duration-300 group-hover:scale-105" alt="Red Heels">
+                 <!--  -->
+            </div>
+            <!-- Image 3 (Red Sandals) -->
+            <div class="relative overflow-hidden group">
+                <img src="image/Image-1.png" class="w-full h-full object-cover transition transform duration-300 group-hover:scale-105" alt="Red Sandals">
+                <!--  -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Categories: Men & Women (UPDATED LAYOUT) -->
+    <section class="flex flex-col">
+        <!-- MEN'S ROW (2 Images) -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Men Image 1 -->
+            <div class="relative h-80 md:h-96 group overflow-hidden cursor-pointer">
+                <img src="image/Image-2.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Men 1">
+                <!--  -->
+                <div class="absolute bottom-6 left-6">
+                    <h3 class="text-xl font-bold text-black uppercase bg-white/80 px-4 py-1.5 backdrop-blur-sm rounded shadow">FOR MEN</h3>
+                </div>
+            </div>
+            <!-- Men Image 2 -->
+            <div class="relative h-80 md:h-96 group overflow-hidden cursor-pointer">
+                <img src="image/Image-3.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Men 2">
+                <!--  -->
+            </div>
+        </div>
+
+        <!-- WOMEN'S ROW (4 Images) -->
+        <div class="grid grid-cols-2 md:grid-cols-4">
+            <!-- Women Image 1 -->
+            <div class="relative h-60 md:h-80 group overflow-hidden cursor-pointer">
+                <img src="image/Image-5.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Women 1">
+                <!--  -->
+            </div>
+            <!-- Women Image 2 -->
+            <div class="relative h-60 md:h-80 group overflow-hidden cursor-pointer">
+                <img src="image/Image-6.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Women 2">
+                <!--  -->
+            </div>
+            <!-- Women Image 3 -->
+            <div class="relative h-60 md:h-80 group overflow-hidden cursor-pointer">
+                <img src="image/Image-7.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Women 3">
+                <!--  -->
+            </div>
+            <!-- Women Image 4 -->
+            <div class="relative h-60 md:h-80 group overflow-hidden cursor-pointer">
+                <img src="image/Image-8.png" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" alt="For Women 4">
+                <!--  -->
+                <div class="absolute bottom-6 right-6">
+                    <h3 class="text-xl font-bold text-black uppercase bg-white/80 px-4 py-1.5 backdrop-blur-sm rounded shadow">FOR WOMEN</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. New Arrivals -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="flex items-baseline mb-8">
+            <h2 class="text-3xl font-bold text-gaopai-red mr-2 brand-font">NEW Arrivals</h2>
+            <span class="text-3xl text-gray-300">|</span>
+            <span class="text-3xl font-bold text-black ml-2 brand-font">GaoPai</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1: Red Heels (ตามภาพ) -->
+            <div class="text-center group cursor-pointer">
+                <div class="aspect-square bg-white rounded-lg shadow-sm mb-4 overflow-hidden relative border">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105" alt="Red Heels">
+                    <!--  -->
+                </div>
+                <h3 class="text-gray-800 font-medium text-lg">UrbanPro High-Top</h3>
+                <div class="flex justify-center items-center mt-1 space-x-3">
+                    <span class="text-gray-900 font-semibold">2,500 บาท</span>
+                    <i class="fa-solid fa-cart-plus text-gaopai-red text-lg cursor-pointer hover:scale-110 transition-transform"></i>
+                </div>
+            </div>
+
+            <!-- Product 2: Black Shoes (ตามภาพ) -->
+            <div class="text-center group cursor-pointer">
+                <div class="aspect-square bg-white rounded-lg shadow-sm mb-4 overflow-hidden relative border">
+                    <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105" alt="Classic Runner">
+                    <!--  -->
+                </div>
+                <h3 class="text-gray-800 font-medium text-lg">StepUp Classic Runner</h3>
+                <div class="flex justify-center items-center mt-1 space-x-3">
+                    <span class="text-gray-900 font-semibold">1,800 บาท</span>
+                    <i class="fa-solid fa-cart-plus text-gaopai-red text-lg cursor-pointer hover:scale-110 transition-transform"></i>
+                </div>
+            </div>
+
+            <!-- Product 3: Blue Loafers (ตามภาพ) -->
+            <div class="text-center group cursor-pointer">
+                <div class="aspect-square bg-white rounded-lg shadow-sm mb-4 overflow-hidden relative border">
+                    <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105" alt="Comfort Loafer">
+                    <!--  -->
+                </div>
+                <h3 class="text-gray-800 font-medium text-lg">Comfort Loafer</h3>
+                <div class="flex justify-center items-center mt-1 space-x-3">
+                    <span class="text-gray-900 font-semibold">2,200 บาท</span>
+                    <i class="fa-solid fa-cart-plus text-gaopai-red text-lg cursor-pointer hover:scale-110 transition-transform"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Reviews -->
+    <section class="bg-gray-100 py-16 border-t border-b">
+        <div class="container mx-auto px-4">
+            <h3 class="font-bold text-xl mb-6 brand-font">รีวิวจากลูกค้า</h3>
+
+            <!-- Review Item 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-4 flex justify-between items-center space-x-4">
+                <div class="flex items-start space-x-4 flex-1">
+                    <div class="text-gaopai-red text-3xl pt-1"><i class="fa-solid fa-user-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm">กนกวรรณ วงศ์สวัสดิ์</h4>
+                        <div class="text-yellow-400 text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2 leading-snug">รองเท้าสวยมากค่ะ ใส่สบาย ไม่กัดเท้าเลย การจัดส่งรวดเร็วมาก แพ็คของมาอย่างดี ไว้จะอุดหนุนอีกนะคะ</p>
+                        <p class="text-xs text-gaopai-red font-medium">ถูกใจ 45 คน | ตอบกลับ</p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?q=80&w=150&auto=format&fit=crop" class="w-16 h-16 object-cover rounded-md" alt="Review Product">
+                <!--  -->
+            </div>
+
+            <!-- Review Item 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-4 flex justify-between items-center space-x-4">
+                <div class="flex items-start space-x-4 flex-1">
+                    <div class="text-gaopai-red text-3xl pt-1"><i class="fa-solid fa-user-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm">สมชาย ใจดี</h4>
+                        <div class="text-yellow-400 text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2 leading-snug">ซื้อให้แฟน แฟนชอบมากครับ หนังนิ่ม ดีไซน์ทันสมัย ใส่แล้วดูดีมากครับ คุ้มราคาครับ</p>
+                        <p class="text-xs text-gaopai-red font-medium">ถูกใจ 22 คน | ตอบกลับ</p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=150&auto=format&fit=crop" class="w-16 h-16 object-cover rounded-md" alt="Review Product">
+                <!--  -->
+            </div>
+
+             <!-- Review Item 3 -->
+             <div class="bg-white p-4 rounded-lg shadow-sm flex justify-between items-center space-x-4">
+                <div class="flex items-start space-x-4 flex-1">
+                    <div class="text-gaopai-red text-3xl pt-1"><i class="fa-solid fa-user-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm">อารยา สุขใจ</h4>
+                        <div class="text-yellow-400 text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2 leading-snug">ประทับใจบริการหลังการขายมากค่ะ สั่งผิดไซส์ แต่เปลี่ยนได้ง่าย แอดมินตอบไวและสุภาพมากค่ะ</p>
+                        <p class="text-xs text-gaopai-red font-medium">ถูกใจ 18 คน | ตอบกลับ</p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=150&auto=format&fit=crop" class="w-16 h-16 object-cover rounded-md" alt="Review Product">
+                <!-- [Image of รองเท้าผ้าใบสีแดง] -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Service Features (Footer Top) -->
+    <section class="bg-gaopai-red text-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <!-- Feature 1: Free Shipping -->
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-truck text-4xl mb-4 opacity-90"></i>
+                <h4 class="font-bold text-lg">ส่งฟรีทั่วประเทศ</h4>
+                <p class="text-sm opacity-80 font-light">(เมื่อสั่งซื้อ 1,000 บาทขึ้นไป)</p>
+            </div>
+            <!-- Feature 2: 14-Day Return -->
+            <div class="flex flex-col items-center border-l-0 md:border-l border-r-0 md:border-r border-white/30 px-4">
+                <i class="fa-solid fa-rotate text-4xl mb-4 opacity-90"></i>
+                <h4 class="font-bold text-lg">เปลี่ยนคืนได้ใน 14 วัน</h4>
+                <p class="text-sm opacity-80 font-light">(ตามเงื่อนไขที่กำหนด)</p>
+            </div>
+            <!-- Feature 3: Secure Payment -->
+            <div class="flex flex-col items-center">
+                <i class="fa-regular fa-credit-card text-4xl mb-4 opacity-90"></i>
+                <h4 class="font-bold text-lg">ชำระเงินปลอดภัย</h4>
+                <p class="text-sm opacity-80 font-light">(รับบัตรเครดิตและโอนเงิน)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Main Footer -->
+    <footer class="bg-gaopai-footer text-white py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <div class="font-bold text-2xl opacity-80 brand-font">GaoPai</div>
+                <div class="opacity-60 text-xs mt-1">
+                    © 2025 GaoPai. All rights reserved.
+                </div>
+            </div>
+            <div class="space-x-4 text-sm opacity-80">
+                <a href="#" class="hover:text-white">Home</a>
+                <a href="#" class="hover:text-white">Shop</a>
+                <a href="#" class="hover:text-white">สินค้าลดราคา(SALE)</a>
+                <a href="#" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
